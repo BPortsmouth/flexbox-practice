@@ -15,10 +15,6 @@ body {
     flex-wrap: wrap;
 }
 
-.container_bottom {
-    background: #124559;
-}
-
 .container__column {
     margin: -10px;
 }
@@ -102,4 +98,100 @@ body {
 
 .container__square-card_sixth-card .container__square_second {
     flex-grow: 0.75;
+}
+
+.container_bottom {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: #124559;
+}
+.container__circle-wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container__circle-card {
+    background-color: #89B6A5;
+    height: 20em;
+    width: 26em;
+    margin: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container__circle-card_odd {
+    background-color: #FE7F2D;
+}
+
+.container__circle-row {
+    width:25em;
+    display: flex;
+}
+
+.container__circle {
+    width: 6em;
+    height: 6em;
+    background-color: #42253B;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.top-row {
+    margin: 10px 10px 0px;
+}
+.bottom-row {
+    margin: 0px 10px 10px 10px;
+}
+.container__circle-card_first-card {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.container__circle-card_first-card .top-row, .container__circle-card_first-card .bottom-row{
+    justify-content: flex-start;
+}
+.container__circle-card_second-card {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.container__circle-card_second-card .top-row, .container__circle-card_second-card .bottom-row{
+    justify-content: flex-end;
+}
+
+.container__circle-card_third-card {
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.container__circle-card_third-card .container__circle-row{
+    justify-content: space-between;
+}
+
+
+.container__circle-card_fourth-card {
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.container__circle-card_fourth-card .container__circle-row{
+    justify-content: space-between;
+}
+
+.container__circle-card_fifth-card {
+    align-items: center;
+    justify-content: center;
+}
+
+.container__circle-card_fifth-card .container__circle-row{
+    justify-content: center;
+}
+
+.container__circle-card_sixth-card {
+    visibility: hidden;
 }
